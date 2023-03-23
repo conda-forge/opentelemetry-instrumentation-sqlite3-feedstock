@@ -1,11 +1,11 @@
-About opentelemetry-instrumentation-sqlite3
-===========================================
+About opentelemetry-instrumentation-sqlite3-feedstock
+=====================================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/opentelemetry-instrumentation-sqlite3-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/open-telemetry/opentelemetry-python-contrib/tree/main/instrumentation/opentelemetry-instrumentation-sqlite3
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/opentelemetry-instrumentation-sqlite3-feedstock/blob/main/LICENSE.txt)
 
 Summary: OpenTelemetry SQLite3 instrumentation
 
