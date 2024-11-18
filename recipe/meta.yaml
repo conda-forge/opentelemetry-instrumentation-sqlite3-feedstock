@@ -1,5 +1,5 @@
 {% set name = "opentelemetry-instrumentation-sqlite3" %}
-{% set version = "0.49b0" %}
+{% set version = "0.49b1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/opentelemetry_instrumentation_sqlite3-{{ version }}.tar.gz
-  sha256: 2d6d32eb106505a4ba0b4b848340d80df7c0610aa0dda99cc14cc9ede63c98ed
+  sha256: 7e359dec019bd06cdf0aef3a87689301a961ae04b5bff0f7a4e3eb30b6d184f6
 
 build:
   noarch: python
@@ -22,8 +22,8 @@ requirements:
   run:
     - python >=3.7
     - opentelemetry-api ~=1.12
-    - opentelemetry-instrumentation-dbapi ==0.49b0
-    - opentelemetry-instrumentation ==0.49b0
+    - opentelemetry-instrumentation-dbapi ==0.49b1
+    - opentelemetry-instrumentation ==0.49b1
     # - opentelemetry-test-utils ==0.37b0
     # - opentelemetry-test-utils ==0.38b0
     # - opentelemetry-test-utils ==0.39b0
