@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 1
 
 requirements:
@@ -22,16 +22,8 @@ requirements:
   run:
     - python >={{ python_min }}
     - opentelemetry-api ~=1.12
-    - opentelemetry-instrumentation-dbapi ==0.50b0
-    - opentelemetry-instrumentation ==0.50b0
-    # - opentelemetry-test-utils ==0.37b0
-    # - opentelemetry-test-utils ==0.38b0
-    # - opentelemetry-test-utils ==0.39b0
-    # - opentelemetry-test-utils ==0.40b0
-    # - opentelemetry-test-utils ==0.41b0
-    # - opentelemetry-test-utils ==0.42b0
-    # - opentelemetry-test-utils ==0.43b0
-    # - opentelemetry-test-utils ==0.44b0
+    - opentelemetry-instrumentation-dbapi =={{ version }}
+    - opentelemetry-instrumentation =={{ version }}
 
 test:
   imports:
